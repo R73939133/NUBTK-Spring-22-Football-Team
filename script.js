@@ -39,7 +39,7 @@ const players = [
     {
         name: "Md Jim Arian",
         position: "Winger", number: 8,
-        image: "image/jim.jpg",
+        image: "image/Jim.jpg",
         stats: { goals: 8, assists: 10, matches: 16, minutesPlayed: 1450 }
     },
     {
