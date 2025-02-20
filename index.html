@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NUBTK Spring 2022</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <div class="logo">
+            <img src="image/rahul.png" alt="Team Logo">
+        </div>
+        <ul>
+            <li><a href="#home" class="active">Home</a></li>
+            <li><a href="#players">Players</a></li>
+            <li><a href="#jerseys">Jerseys</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home" class="hero-section">
+        <div class="hero-content">
+            <h1>NUBTK Spring 22</h1>
+            <p class="tagline">Where Legends Are Made</p>
+            <a href="#players" class="cta-button">Meet Our Team</a>
+        </div>
+    </section>
+
+    <!-- Players Section -->
+    <section id="players">
+        <div class="section-header">
+            <h2>Team Roster</h2>
+            <div class="underline"></div>
+        </div>
+        <!-- Player Filters -->
+        <div class="filter-controls">
+            <select id="positionFilter" onchange="filterPlayersByPosition(this.value)">
+                <option value="All">All Positions</option>
+                <option value="Forward">Forwards</option>
+                <option value="Midfielder">Midfielders</option>
+                <option value="Defender">Defenders</option>
+                <option value="Goalkeeper">Goalkeepers</option>
+            </select>
+            <select id="sortPlayers" onchange="sortPlayers(this.value)">
+                <option value="number">Sort by Number</option>
+                <option value="name">Sort by Name</option>
+                <option value="goals">Sort by Goals</option>
+            </select>
+        </div>
+        <!-- Player Grid -->
+        <div class="player-grid" id="playerRoster">
+            <!-- Player cards will be dynamically inserted here -->
+        </div>
+    </section>
+
+    <!-- Jerseys Section -->
+    <section id="jerseys" class="jersey-section">
+        <div class="section-header">
+            <h2>Our Jerseys</h2>
+            <div class="underline"></div>
+        </div>
+        <div class="jersey-container">
+            <div class="jersey">
+                <div class="jersey-card">
+                    <img src="/api/placeholder/300/300" alt="Home Jersey">
+                    <div class="jersey-info">
+                        <h3>Home Jersey</h3>
+                        <p>Traditional university colors with modern design</p>
+                        <div class="jersey-colors">
+                            <span class="color-dot primary"></span>
+                            <span class="color-dot secondary"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="jersey">
+                <div class="jersey-card">
+                    <img src="/api/placeholder/300/300" alt="Away Jersey">
+                    <div class="jersey-info">
+                        <h3>Away Jersey</h3>
+                        <p>Clean white design with team accents</p>
+                        <div class="jersey-colors">
+                            <span class="color-dot away-primary"></span>
+                            <span class="color-dot away-secondary"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <div class="section-header">
+            <h2>Get in Touch</h2>
+            <div class="underline"></div>
+        </div>
+        <div class="contact-container">
+            <div class="social-links">
+                <h3>Connect With Us</h3>
+                <div class="social-grid">
+                    <a href="#" class="social-link">
+                        <span class="social-icon">📱</span>
+                        Facebook
+                    </a>
+                    <a href="#" class="social-link">
+                        <span class="social-icon">📱</span>
+                        Twitter
+                    </a>
+                    <a href="#" class="social-link">
+                        <span class="social-icon">📱</span>
+                        Instagram
+                    </a>
+                </div>
+                <div class="contact-info">
+                    <p><strong>Address:</strong> University Stadium, Sports Complex</p>
+                    <p><strong>Phone:</strong> (123) 456-7890</p>
+                    <p><strong>Email:</strong> team@university.edu</p>
+                </div>
+            </div>
+            <form id="contactForm" class="contact-form">
+                <div class="form-group">
+                    <input type="text" placeholder="Your Name" required>
+                </div>
+                <div class="form-group">
+                    <input type="email" placeholder="Your Email" required>
+                </div>
+                <div class="form-group">
+                    <select>
+                        <option value="">Select Subject</option>
+                        <option value="general">General Inquiry</option>
+                        <option value="tickets">Ticket Information</option>
+                        <option value="sponsorship">Sponsorship</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <textarea placeholder="Your Message" required></textarea>
+                </div>
+                <button type="submit" class="submit-button">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-info">
+                <p>&copy; 2025 University Football Team. All rights reserved.</p>
+                <p>Follow us on social media for the latest updates!</p>
+            </div>
+            <div class="footer-links">
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Use</a>
+                <a href="#">Sitemap</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Notification Container -->
+    <div id="notificationContainer"></div>
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
+</body>
+</html>
