@@ -16,7 +16,7 @@ const players = [
         name: "Raul Jobel Baroi",
         position: "Midfielder",
         number:11,
-        image: "/api/placeholder/400/500", // Replace with actual player image path
+        image: "image/raul.jpg", // Replace with actual player image path
         stats: {
             goals: 5,
             assists: 12,
