@@ -2,53 +2,66 @@
 const players = [
     {
         name: "Rahul Kumar Ghosh",
-        position: "Defender",
-        number: 4,
-        image: "image/rahul.png", // Replace with actual player image path
-        stats: {
-            goals: 15,
-            assists: 8,
-            matches: 20,
-            minutesPlayed: 1800
-        }
+        position: "Defender", number: 4,
+        image: "image/rahul.png",
+        stats: { goals: 15, assists: 8, matches: 20, minutesPlayed: 1800 }
     },
     {
-        name: "Raul Jobel Baroi",
-        position: "Midfielder",
-        number:11,
-        image: "image/raul.jpg", // Replace with actual player image path
-        stats: {
-            goals: 5,
-            assists: 12,
-            matches: 18,
-            minutesPlayed: 1620
-        }
+        name: "Raul Jobel Baroi", 
+        position: "Midfielder", number: 11,
+        image: "image/raul.jpg",
+        stats: { goals: 5, assists: 12, matches: 18, minutesPlayed: 1620 }
     },
     {
-        name: "Peas Das Rudra",
-        position: "Goalkeeper",
-        number: 1,
-        image: "/api/placeholder/400/500", // Replace with actual player image path
-        stats: {
-            goals: 1,
-            assists: 3,
-            matches: 19,
-            minutesPlayed: 1710
-        }
+        name: "Peash Das Rudra",
+        position: "Goalkeeper", number: 1, 
+        image: "image/rudra.png",
+        stats: { goals: 1, assists: 3, matches: 19, minutesPlayed: 1710 }
     },
     {
         name: "Kumar Sajib",
-        position: "Midfielder",
-        number: 7,
-        image: "/api/placeholder/400/500", // Replace with actual player image path
-        stats: {
-            cleanSheets: 8,
-            saves: 45,
-            matches: 20,
-            minutesPlayed: 1800
-        }
+        position: "Midfielder", number: 7,
+        image: "/api/placeholder/400/500",
+        stats: { cleanSheets: 8, saves: 45, matches: 20, minutesPlayed: 1800 }
+    },
+    {
+        name: "Mrinmoy Mondol",
+        position: "Forward", number: 10,
+        image: "image/mrinmoy.jpg", 
+        stats: { goals: 10, assists: 6, matches: 15, minutesPlayed: 1400 }
+    },
+    {
+        name: "Noyon Ghosh",
+        position: "Forward", number: 9,
+        image: "image/noyon.jpg",
+        stats: { goals: 12, assists: 7, matches: 17, minutesPlayed: 1500 }
+    },
+    {
+        name: "Md Jim Arian",
+        position: "Winger", number: 8,
+        image: "image/jim.jpg",
+        stats: { goals: 8, assists: 10, matches: 16, minutesPlayed: 1450 }
+    },
+    {
+        name: "Mark Pulak Das",
+        position: "Defender", number: 2,
+        image: "image/mark.jpg",
+        stats: { goals: 3, assists: 5, matches: 14, minutesPlayed: 1200 }
+    },
+    {
+        name: "Md Nasim Hossain",
+        position: "Defender", number: 3,
+        image: "image/nasim.jpg",
+        stats: { goals: 2, assists: 4, matches: 13, minutesPlayed: 1100 }
+    },
+    {
+        name: "Md Masud",
+        position: "Midfielder", number: 5,
+        image: "image/masud.jpg",
+        stats: { goals: 6, assists: 9, matches: 16, minutesPlayed: 1350 }
     }
 ];
+    
 
 // Wait for the DOM to be fully loaded before executing any code
 document.addEventListener('DOMContentLoaded', () => {
